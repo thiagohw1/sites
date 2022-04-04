@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-color: grey;
+            width: 800px;
+            height: 800px;
+            position: relative;
+        }
+
+        #conteudo{
+            border-radius: 10px;
+            background-color: darkgrey;
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+
+        <article id="conteudo">
+            <form action="">
+                Nome: <input type="text" value="nome">
+            </form>
+        </article>
+
+    </section>
+    
+</body>
+</html>

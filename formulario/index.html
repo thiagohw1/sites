@@ -23,12 +23,21 @@
             height: 60px;
         }
         main{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             width: 450px;
             margin: 0 auto;
             font-weight:300;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(236, 236, 236);
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 35px;
+            box-shadow: 5px 5px 15px  rgb(114, 114, 114);
         }
         main h2{
+            font-family: 'Courier New', Courier, monospace;
             margin-top: 30px;
             text-align: center;
         }
@@ -36,24 +45,36 @@
             display: block;
             padding: 5px;
             width: 400px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: solid 1px grey;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+            height: 25px;
+            margin-bottom: 10px;
+            margin-top: 3px;
+            border-radius: 10px;
+            border: solid 0px rgb(150, 149, 149);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.534);
+            color: slategray;
+            font-size: 14px;
+            outline: 0;
+
         }
         textarea{
             width: 400px;
             height: 150px;
-            box-shadow: 2px 2px 5px black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
             border-radius: 10px;
-            border: 1px solid black;
+            border: 2px solid rgb(150, 149, 149);
+            padding: 10px;
+            outline: 0;
         }
         .server{
+            height: 40px;
             width: 300px;
             display: block;
             padding: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+            border-radius: 10px;
+            border: 2px solid rgb(150, 149, 149);
         }
-
+        
         footer{
             position: absolute;
             bottom: 0;
@@ -70,6 +91,18 @@
             color:rgb(255, 202, 133);
             text-decoration: none;
             
+        }
+        button{
+            height: 35px;
+            width: 90px;
+            background-color:rgb(12, 18, 53);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 5px;
+            border: none;
+            display: block;
+            margin-top: 15px;
+
         }
     </style>
 </head>
@@ -98,11 +131,11 @@
                 <select name="servidor" id="servidor" class="server">
                     <option value=""></option>
                     <option value="server1">Servidor 1</option>
-                    <option value="server2">Servidor 1</option>
-                    <option value="server3">Servidor 1</option>
-                    <option value="server4">Servidor 1</option>
-                    <option value="server5">Servidor 1</option>
-                    <option value="server6">Servidor 1</option>
+                    <option value="server2">Servidor 2</option>
+                    <option value="server3">Servidor 3</option>
+                    <option value="server4">Servidor 4</option>
+                    <option value="server5">Servidor 5</option>
+                    <option value="server6">Servidor 6</option>
                 </select>
             </label>
 
@@ -111,10 +144,7 @@
             
             
             Deixe aqui sua Opnião ou lembrete:
-            <textarea name="texto" id="texto">
-
-                
-            </textarea>
+            <textarea name="texto" id="texto"></textarea>
 
 
             <br>
@@ -123,6 +153,9 @@
                 <input type="checkbox">
                 Eu declaro que li e aceito os <a href="#">termos</a>
             </label>
+            <br>
+
+            <button>Cadastrar</button>
 
         </form>
         </main>

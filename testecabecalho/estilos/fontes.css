@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'austein';
+    src: url('../fonts/Austein.woff2') format('woff2'),
+         url('../fonts/Austein-Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
+    font-family: 'blackjack';
+    src: url('../fonts/BLACKJAR.TTF') format('ttf'),
+    
+  
+  }

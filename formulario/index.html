@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            width: 100%;
+            background-image: linear-gradient(rgb(12, 20, 58),rgb(15, 27, 87));
+        }
+        header img{
+            height: 60px;
+        }
+        main{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 450px;
+            margin: 0 auto;
+            font-weight:300;
+        }
+        main h2{
+            margin-top: 30px;
+            text-align: center;
+        }
+        input[type=text],[type=password],[type=email]{
+            display: block;
+            padding: 5px;
+            width: 400px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: solid 1px grey;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+        }
+        textarea{
+            width: 400px;
+            height: 150px;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .server{
+            width: 300px;
+            display: block;
+            padding: 5px;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            height: 60px;
+            width: 100%;
+            background-image: linear-gradient(rgb(15, 27, 87),rgb(12, 20, 58));
+        text-align: center;
+        }
+        .footer-design{
+            margin-top: 18px;
+            color: white;
+        }
+        .footer-design a{
+            color:rgb(255, 202, 133);
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/queiroz-03 (3).png" alt="">
+        
+    </header>
+    <main><h2>Formulário de cadastro</h2>
+        <form action="#">
+            <label>Login:
+                <input type="text" name="login" value="">
+            </label>
+            <label>Senha:
+                <input type="password" name="senha" value="">
+            </label>
+            <label>Repita a senha:
+                <input type="password" name ="senha2">
+            </label>
+            <label>Insira seu E-mail
+                <input type="email" name="email">
+            </label>
+            
+            
+            <label>Servidor
+                <select name="servidor" id="servidor" class="server">
+                    <option value=""></option>
+                    <option value="server1">Servidor 1</option>
+                    <option value="server2">Servidor 1</option>
+                    <option value="server3">Servidor 1</option>
+                    <option value="server4">Servidor 1</option>
+                    <option value="server5">Servidor 1</option>
+                    <option value="server6">Servidor 1</option>
+                </select>
+            </label>
+
+
+            <br>
+            
+            
+            Deixe aqui sua Opnião ou lembrete:
+            <textarea name="texto" id="texto">
+
+                
+            </textarea>
+
+
+            <br>
+            <br>
+            <label>
+                <input type="checkbox">
+                Eu declaro que li e aceito os <a href="#">termos</a>
+            </label>
+
+        </form>
+        </main>
+        <footer>
+            <div class="footer-design">
+                designed by <a href="https://github.com/thiagohw1" target="_blank">thiago pintinha</a> 
+            </div>
+        </footer>
+</body>
+</html>

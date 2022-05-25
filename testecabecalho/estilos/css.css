@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: rgb(4, 30, 43);
+    /*background-color: rgb(4, 30, 43);*/
+    background-color: tan;
     color: white;
     margin: 0 auto;
     
@@ -58,15 +59,17 @@ nav a:hover{
     color: white;
     border: 3px solid rgb(255, 123, 0);
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 0px 20px 0px 20px;
     padding: 15px;
 }
 
 .pedido a:hover{
     text-decoration: none;
-    border: 3px solid rgb(255, 38, 0);
+    border: 3px solid white;
     padding: 15px;
     transition: 500ms;
+    background-image: linear-gradient(rgb(255, 123, 0), rgb(255, 60, 0));
+    
 
 }
 
@@ -88,7 +91,7 @@ article{
     width: 50%;
 }
 aside{
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.svg);
     background-size: contain;
     /*background-color: yellow;*/
     width: 50%;
